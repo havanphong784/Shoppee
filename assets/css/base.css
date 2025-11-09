@@ -4,6 +4,7 @@
     --text-color: #333;
     --primary-color: #ee4d2d;
     --primary-color-rgba: rgba(283,75,43,0.08);
+    --border-color: #dbdbdb;
 }
 
 * {
