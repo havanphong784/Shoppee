@@ -5,6 +5,9 @@
     --primary-color: #ee4d2d;
     --primary-color-rgba: rgba(283,75,43,0.08);
     --border-color: #dbdbdb;
+    --navbar-height: 34px;
+    --header-hieght: 120px;
+    --header-with-search-height: calc(var(--header-hieght) - var(--navbar-hieght));
 }
 
 * {

@@ -1,22 +1,23 @@
 .header {
-    height: 120px;
+    height:var(--header-hieght);
     background-image: linear-gradient(0,#ff6535,#8c291a);
 }
 
 .header__navbar {
     display: flex;
     justify-content: space-between;
+    height: var(--navbar-height);
 }
 
 .header__nav-list {
-    list-style-type: none;
-    margin-top: 4px;
+    margin: 4px 0 0 0;
+    display: flex;
 }
 
 .header__nav-item {
+    position: relative;
     display: inline-block;
     margin: 0 8px;
-    position: relative;
     min-height: 26px;
 }
 
@@ -418,4 +419,36 @@
 
 .auth-form__help-fogot {
     color : var(--primary-color);
+}
+
+.header-with-search {
+    height: var(--header-with-search-height);
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    width: 200px;
+}
+.header__logo-img {
+    color: var(--white-color);
+    width: 150px;
+}
+
+.header__search {
+    flex: 1;
+    height: 40px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+}
+
+.header__cart {
+    width: 150px;
+    text-align: center;
+}
+
+.header__cart-icon {
+    color: var(--white-color);
+    font-size: 2.4rem;
+    margin-top: 0.2rem;
 }
