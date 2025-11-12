@@ -145,6 +145,14 @@
         transform: scale(1);
     }
 }
+@keyframes growth {
+    from {
+        transform: scale(var(--grow-from));
+    }
+    to {
+        transform: scale(var(--grow-to));
+    }
+}
 .header__notify-header {
     height: 40px;
     background-color: var(--white-color);
@@ -227,6 +235,7 @@
     bottom: 0;
     right: 0;
     display: flex;
+    animation: fadeIn linear 0.1s;
 }
 
 .modal__overlay {
@@ -240,6 +249,9 @@
     margin: auto;
     position: relative;
     z-index: 1;
+    --grow-from: 0.7;
+    --grow-to: 1;
+    animation: growth linear 0.1s;
 }
 
 /* Authen modal */
@@ -264,6 +276,7 @@
 .auth-form__heading {
     font-size: 2.2rem;
     font-weight: var(--text-color);
+    padding: 10px 0;
 }
 
 .auth-form__swith-btn {
@@ -382,4 +395,27 @@
 
 .auth-form__socials-title {
     margin: 0 16px;
+}
+
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.auth-form__help-links {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #939393
+}
+
+.auth-form__help-separat {
+    display: block;
+    border-left: 1px solid #eaeaea;
+    height: 20px;
+    margin: 4px 16px 0;
+}
+
+.auth-form__help-fogot {
+    color : var(--primary-color);
 }
