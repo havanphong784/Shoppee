@@ -12,7 +12,7 @@
 }
 
 * {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html {
@@ -46,10 +46,9 @@ html {
 }
 
 .grid__column2-4 {
-    display: inline-flex;
     padding-left: 5px;
     padding-right: 5px;
-    width: calc(20% - 2.2px);
+    width: 20%;
 }
 
 .grid__column10 {
@@ -92,16 +91,9 @@ html {
     border-radius: 2px;
 }
 
-.pagination-item__icon {
-
-}
-
 .home-product__pagination {
     margin: 50px 0 32px;
 }
-
-
-
 
 /* Animation */
 @keyframes fadeIn {
